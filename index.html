@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <a href="https://www.aluracursos.com/">
+                <img src="imagenes/Vector.png" alt="alura-logo" class="alura-logo">
+            </a>
+            <img src="/imagenes/ultra-secreto (1).png" alt="" class="imagen-secreto">
+            <h1 class="titulo">Código Secreto</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="mensaje-entrada">
+            <textarea name="input" cols="40" rows="6" class="texto-entrada" placeholder="Ingrese el texto aquí"></textarea>
+            <p>Solo letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <button class="encriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>            
+        </section>
+
+        <section class="mensaje-salida">
+            <div class="seccion-oculta">
+                <img src="imagenes/Muñeco.png" alt="Background" class="imagen-salida">
+                <h3 class="ingresar-texto">Ingrese el texto que quieres encriptar o desencriptar</h3>
+            </div>
+            <textarea name="output" cols="32" rows="8" placeholder="Ningún mensaje fue encontrado" class="texto-salida"></textarea>
+            <button class="copiar" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/roo.gonzalez.31924"><img src="/imagenes/facebook.png" alt="facebook-ícono" class="face"></a>
+        <a href="https://www.instagram.com/rocio.gonzalez11/"><img src="/imagenes/instagram.png" alt="instagram-ícono" class="insta"></a>
+        <a href="https://www.linkedin.com/in/rocio-gonzalez-116a54249/"><img src="/imagenes/logotipo-de-linkedin.png" alt="linkedin-ícono" class="link"></a>
+        <a href="https://github.com/WebRocio"><img src="/imagenes/signo-de-github.png" alt="github-ícono" class="git"></a>
+    </footer>
+   
+    <script src="/scripts.js"></script>
+     
+</body>
+</html>

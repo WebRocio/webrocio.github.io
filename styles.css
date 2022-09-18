@@ -1,0 +1,265 @@
+
+body{
+    width: 100%;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(184,182,220,1) 60%, rgba(176,183,223,1) 69%, rgba(148,187,233,1) 100%);
+}
+ 
+/** Header **/
+.encabezado{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.alura-logo{
+    width: 35px;
+    padding: 18px;
+    border-radius: 20px;
+}
+
+.alura-logo:hover{
+    filter: drop-shadow(15px 10px 4px #4444dd);
+}
+
+.titulo{
+    font-size: 40px;
+    font-weight: bold;
+    color: #400340;
+    text-shadow: 20px 10px 20px #3EECAC;
+    position: absolute;
+    top: 60px;
+    right: 100px;
+}
+
+.imagen-secreto{
+    width: 80px;
+    float: right;
+    filter: contrast(190%) brightness(100%);
+}
+
+/** Main **/
+main{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Sección 1 */
+.mensaje-entrada{
+    width: 50%;
+    margin-left: 30px;
+}
+
+.mensaje-entrada p{
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.texto-entrada{
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.mensaje-entrada p:before{
+    content: '\26A0';
+    font-size: 30px;
+    padding: 0 10px 0 0;
+}
+
+.encriptar, .desencriptar{
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 20px;
+    border-color: #400340;
+    color: #400340;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.encriptar{
+    background-color: #f075f0;
+    margin: 0 30px 0 10px;
+}
+
+.desencriptar{
+    background-color:#f0bff0;
+}
+
+.encriptar:hover, .desencriptar:hover{
+    background-color: #773977;
+    color: white;
+    transition: 0.5s; 
+}
+
+/* Sección 2 */
+.mensaje-salida{
+    width: 30%;
+    margin-right: 30px;
+    background: lightblue;
+    padding: 25px 60px;
+    text-align: center;
+    border: 1px solid darkslategrey;
+    border-radius: 20px;
+    box-shadow: 6px 6px rgb(60, 81, 102);
+}
+
+.mensaje-salida img{
+    width: 250px;
+    filter: drop-shadow(15px 10px 4px lightslategrey);
+}
+
+.mensaje-salida h3{
+    font-size: 20px;
+    padding: 0 0 10px 0;
+}
+
+.texto-salida{
+    border-radius: 20px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.copiar{
+    display: block;
+    background: #773977;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.copiar:hover{
+    background: #f0bff0;
+    color: #400340;
+    padding: 22px;
+    transition: 0.5s;
+}
+
+/** Footer **/
+footer{
+    margin: 40px;
+    text-align: center;
+}
+
+footer a{
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    color: #400340;
+}
+
+.face, .insta, .link, .git{
+    width: 30px;
+}
+
+.face:hover, .insta:hover, .link:hover, .git:hover{
+    box-shadow: 20px 10px 20px gray;
+    transition: 0.5s;
+}
+
+/** Responsive Design **/
+
+@media screen and (max-width: 1024px){
+    main{
+        display: inline-block;
+    }
+    .mensaje-entrada, .mensaje-salida{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .mensaje-salida{
+        margin-top: 30px;
+    }
+    .mensaje-entrada{
+        margin: 0 30px;
+    }
+    .texto-entrada, .texto-salida{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 980px){
+    main{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    main{
+        width: 90%;
+        display: block;
+    }
+    .encabezado{
+        text-align: center;
+    }
+    .titulo, .imagen-secreto{
+        display: none;
+    }
+    .texto-entrada, .texto-salida{
+        font-size: 20px;
+    }
+    .mensaje-entrada{
+        margin: 0 30px;
+    }
+    .mensaje-salida{
+        width: 70%;
+        margin: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .encabezado{
+        width: 100%;
+        margin: 0 auto;
+    }   
+    .imagen-secreto{
+        display: none;
+    }
+    .mensaje-entrada{
+        width: 90%;
+    }
+    .texto-entrada{
+        font-size: 15px;
+    }
+    .mensaje-salida{
+        width: 70%;
+        margin: 20px;
+    }
+    .texto-salida{
+        font-size: 15px;
+    }
+    .encriptar, .desencriptar{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .encabezado{
+        width: 100%;
+    }
+    .titulo{
+        display: none;
+    }
+    .texto-entrada, .texto-salida{
+        font-size: 18px;
+    }
+    .texto-entrada{
+        width: 70%;
+    }
+    .texto-salida{
+        width: 70%;
+        height: 100px;
+    }
+    .mensaje-salida{
+        width: 200px;
+    }
+    footer a{
+        text-align: center;
+    }
+}
+
